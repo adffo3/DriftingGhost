@@ -1,0 +1,23 @@
+// 2019-05-28 00:58:08
+
+var Speed = 5;
+var ZeroSpeed = 0;
+var Counter = 0;
+var JumpFactor = 1;
+
+
+// Key Pressed
+if keyboard_check_pressed(vk_left)
+{
+    motion_add(180, Speed);
+}
+if keyboard_check_pressed(vk_right)
+{
+    motion_add(0, Speed);
+}
+if keyboard_check_pressed(vk_up)
+{
+    motion_add(90, Speed);
+}
+
+

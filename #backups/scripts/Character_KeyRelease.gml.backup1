@@ -1,0 +1,25 @@
+// 2019-05-28 00:57:57
+
+var Speed = 5;
+var ZeroSpeed = 0;
+
+// Key Released
+if keyboard_check_released(vk_left)
+{
+    motion_add(0, Speed);
+}
+if keyboard_check_released(vk_right)
+{
+    motion_add(180, Speed);
+}
+
+if keyboard_check_released(vk_up)
+{
+    motion_add(270, Speed);
+}
+
+if global.pressed == 0
+{
+    motion_set(0, ZeroSpeed);
+}
+

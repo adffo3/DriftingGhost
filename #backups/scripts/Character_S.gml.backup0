@@ -1,0 +1,32 @@
+// 2019-05-27 23:43:56
+
+var Speed = 5;
+var ZeroSpeed = 0;
+
+// Key Pressed
+if keyboard_check_pressed(vk_left)
+{
+    motion_set(180, Speed);
+}
+if keyboard_check_pressed(vk_right)
+{
+    motion_set(0, Speed);
+}
+if keyboard_check_pressed(vk_up)
+{
+    motion_set(90, Speed);
+}
+
+// Key Released
+if keyboard_check_released(vk_left)
+{
+    motion_set(180, ZeroSpeed);
+}
+if keyboard_check_released(vk_right)
+{
+    motion_set(0, ZeroSpeed);
+}
+if keyboard_check_released(vk_up)
+{
+    motion_set(90, ZeroSpeed);
+}

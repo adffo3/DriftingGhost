@@ -1,0 +1,10 @@
+// 2019-05-27 23:54:22
+
+if place_free(x, y + 1)
+{
+    gravity = 0;
+}
+else
+{
+    gravity = 0.5;
+}
